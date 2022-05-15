@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Input, Button } from './TaskCss'
+
 const TaskForm = ({ addTask }) => {
     const [task, setTask] = useState('');
     
@@ -15,12 +17,12 @@ const TaskForm = ({ addTask }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input value={task} 
+            <Input value={task} 
                    type="text"
                    onChange={handleChange}
                    placeholder="Enter task"
             />
-            <button>Add</button>
+            <Button>Add</Button>
         </form>
     );
 };

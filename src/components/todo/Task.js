@@ -1,11 +1,8 @@
 import React from 'react';
 
-import styled from "styled-components";
+import { Active, Done } from './TaskCss'
 
-const Task = ({id, task, handleToggle}) => {
-
-    const Active = styled.div`font-weight: bold;`;
-    const Done = styled.div`text-decoration: line-through;`;
+const Task = ({task, handleToggle}) => {
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -13,14 +10,13 @@ const Task = ({id, task, handleToggle}) => {
     }
 
     return task.done ?
-            <Done 
-                  id={task.id}  
+            <Done id={task.id}  
                   key={task.id}
                   name="task"
                   value={task.id}
                   onClick={handleClick}
                   className={"task done"}>
-                {task.title}
+                    {task.title}
             </Done>
             :
             <Active id={task.id}
@@ -29,7 +25,7 @@ const Task = ({id, task, handleToggle}) => {
                     value={task.id}
                     onClick={handleClick}
                     className={task.done ? "task done" : "task"}>
-                        {task.title}
+                      {task.title}
             </Active>
 
 };

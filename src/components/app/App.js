@@ -36,10 +36,8 @@ function App() {
     return (
         <div className='Tasks'>
             <Header />
-            <TaskList taskList={taskList} handleToggle={handleToggle} 
-            handleFilter={handleFilter}
-            />
             <TaskForm addTask={addTask} />
+            <TaskList taskList={taskList} handleToggle={handleToggle} handleFilter={handleFilter} />
             <Footer total={total} />
         </div>
     )
