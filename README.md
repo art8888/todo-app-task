@@ -22,7 +22,7 @@ Styling of the application is not important, and there will be no additional ben
 * Fixed issue with the `this.state.map` so that each child in a list must have a unique "key" prop.
 * Upgraded `react`, `react-dom`, `react-scripts` packages to a latest versions without caret symbol (^) so that accidentally will not be upgraded
 * As long as _React_ was upgraded to a latest version (>16.8), need to change codebase. Changed codebase to support one type of programming (not classes with functional components) but only functional component, because it has greater performance over the Classes
-* Structured project: All project files pgrouped by features. All features grouped in folders to support common types of files
+* Structured project: All project files grouped by features. All features grouped in folders to support common types of files
 * Separated code logic: Styles, component logic and dummy data was moved into separate files.
 * Moved classes states logic into component hooks
 * Implemented input field to add new tasks
@@ -30,4 +30,4 @@ Styling of the application is not important, and there will be no additional ben
 
 
 ## Notes
-* `package-lock` had dependencies from DanskeBank _artifactory_ which was not possible to work with modules
+* `package-lock` had dependencies from DanskeBank _artifactory_ which was not possible to work with modules outside DanskeBank
