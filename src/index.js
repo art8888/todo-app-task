@@ -1,5 +1,4 @@
-import React, {StrictMode} from 'react';
-import styled from 'styled-components';
+import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import App from './components/app';
