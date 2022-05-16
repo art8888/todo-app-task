@@ -4,8 +4,8 @@ import data from '../../utils/data.json';
 
 import Header from '../header';
 import Footer from '../footer';
-import TaskList from '../task/TaskList';
-import TaskForm from '../task/TaskForm';
+import TaskList from '../tasks/TaskList';
+import TaskForm from '../tasks/TaskForm';
 
 function App() {
 
